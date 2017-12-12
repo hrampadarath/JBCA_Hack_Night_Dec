@@ -2,7 +2,7 @@
 
 Welcome to the 3rd JBCA Data Science Hack Night.
 For this hack night, each team will choose one of the following challenges and present a 3 minute presentation.
-These presentations will be judged by the organisers and the winner will win the coveted Data Monkey Trophy!
+These presentations will be judged by the organisers and the winners will win the coveted Data Monkey Trophy and othr prizes! This month's JBCA Hack Night is sponsored (food and prizes) by the Technology Recruitment Solutions Provider, [Cathcart Associates](http://www.cathcartassociates.com/) 
 
 The presentations will be judged on the accuracy of the predicted results via machine learning and visualisation/presentation 
 of the data/results.
@@ -32,6 +32,9 @@ Below we've described two different challenges for which each team will pick one
 ### Challenge 1: Machine learning - TBD
 
 ### Challenge 2: Build a Machine Learning web application
+
+Final product:
+https://movie-recommender-example.herokuapp.com/
 
 ### Challenge 3: TBD
 
