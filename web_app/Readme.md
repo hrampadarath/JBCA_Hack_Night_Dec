@@ -8,7 +8,7 @@ A simple tutorial, using the example provided in this repository on converting a
 #### Step 1. Understand what you want to create
 
 This may seem as a silly step, but it is the most important. Having an idea on what you want to build will hlep ypu understand what 
-you will need from the Machine Leanrong part opf the project. In this tutorial I want to make a simple web application to provide 
+you will need from the Machine Leanrning part of the project. In this tutorial I want to make a simple web application to provide 
 movie recommendatiions, based on a movie the user liked. The input will be a name of the movie and the output recommendations for 
 that movie. For this to work I will need: (1) a database and (2) a model with the recommendations. 
 
@@ -56,7 +56,7 @@ Then install Flask and other prerequisites. (You will need to install all module
 >pip install panda
 ```
 ### Step 4. Build the Flask app
-The Flask app consists of 2 main components: the main apppy and HTML templates, which are saved in a folder called templates. A simple app.py contains code that returns a rendered version of the html files in the templates folder. For example:
+The Flask app consists of 2 main components: the main [app.py](https://github.com/hrampadarath/JBCA_Hack_Night_Dec/blob/master/web_app/app.py) and HTML templates, which are saved in a folder called [templates](https://github.com/hrampadarath/JBCA_Hack_Night_Dec/tree/master/web_app/templates). A simple app.py contains code that returns a rendered version of the html files in the templates folder. For example:
 
 ```python
 from flask import Flask, request, render_template
