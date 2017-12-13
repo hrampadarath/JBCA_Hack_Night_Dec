@@ -98,10 +98,8 @@ The above html file has three important features:
 3. This is all wrapped in an html block that is passed to layout.html, creating the webpage. 
 
 The overall aim of this web app is that user will search for the movie in a form provided (a query that is sent to 
-"/similarByName" via  ["similar.html"](https://github.com/hrampadarath/JBCA_Hack_Night_Dec/blob/master/web_app/templates
-/similar.html)) and for each item in the list there will be an associated recommend button (that sends a query to another 
-function /similarByContent also by  ["similar.html"](https://github.com/hrampadarath/JBCA_Hack_Night_Dec/blob/master/web_app
-/templates/similar.html)). The "/similarByContent" function is where the pickle file is used. 
+"/similarByName" via  ["similar.html"](https://github.com/hrampadarath/JBCA_Hack_Night_Dec/blob/master/web_app/templates/similar.html)) and for each item in the list there will be an associated recommend button (that sends a query to another 
+function /similarByContent also by  ["similar.html"](https://github.com/hrampadarath/JBCA_Hack_Night_Dec/blob/master/web_app/templates/similar.html)). The "/similarByContent" function is where the pickle file is used. 
 Confusing? Confuffled?
 
 To complete my app.py, I added a random movie generator, and an about page.
