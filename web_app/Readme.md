@@ -94,14 +94,15 @@ The home.html file:
 The above html file has three important features:
 
 1. extends "layout.html" - the [layout.html](https://github.com/hrampadarath/JBCA_Hack_Night_Dec/blob/master/web_app/templates/layout.html) is a general html file that dictates the look of the application. All html files/pages in the applcation is an extention of this page.
-2. action = "/similarByName" method = 'POST' - this is a call to a function "/similarByName" in the [app.py](https://github.com/hrampadarath/JBCA_Hack_Night_Dec/blob/master/web_app/app.py) 
+2. <form action = "/similarByName" method = 'POST'> here a form is used to create a query (i.e. name of movie), that makes a call to a function "/similarByName" in the [app.py](https://github.com/hrampadarath/JBCA_Hack_Night_Dec/blob/master/web_app/app.py). Once this quey is made, the function "/similarByName" searches the database for a movie with a smiliar name, and returns a dictionary. 
 3. This is all wrapped in an html block that is passed to layout.html, creating the webpage. 
 
-While building the app, my first version had the user performing two actions: 1. seaching the database for the movie (i.e. if it exists) and 2. copy and pasting that into another form to seach for recommendations. 
-This is an obviously inefficient UI. So insted, the user will search for the movie in a form provided and for each item in the list there will be an associated recommend button. 
-
-To do this I populated the app.py with two functions: "/similarByName" and "/similarByContent" both calling the same html file ["similar.html"](https://github.com/hrampadarath/JBCA_Hack_Night_Dec/blob/master/web_app/templates/similar.html). Have a look at the [app.py](https://github.com/hrampadarath/JBCA_Hack_Night_Dec/blob/master/web_app/app.py). The "/similarByContent" function is where the pickle file is used. 
-However, note similar.html also calls /similarByContent"! What happens is that any result produced by similar.html will also have a button call to /similarByContent. Confusing? Confuffled?
+The overall aim of this web app is that user will search for the movie in a form provided (a query that is sent to 
+"/similarByName" via  ["similar.html"](https://github.com/hrampadarath/JBCA_Hack_Night_Dec/blob/master/web_app/templates
+/similar.html)) and for each item in the list there will be an associated recommend button (that sends a query to another 
+function /similarByContent also by  ["similar.html"](https://github.com/hrampadarath/JBCA_Hack_Night_Dec/blob/master/web_app
+/templates/similar.html)). The "/similarByContent" function is where the pickle file is used. 
+Confusing? Confuffled?
 
 To complete my app.py, I added a random movie generator, and an about page.
 
