@@ -56,7 +56,9 @@ Then install Flask and other prerequisites. (You will need to install all module
 >pip install panda
 ```
 ### Step 4. Build the Flask app
-The Flask app consists of 2 main components: the main [app.py](https://github.com/hrampadarath/JBCA_Hack_Night_Dec/blob/master/web_app/app.py) and HTML templates, which are saved in a folder called [templates](https://github.com/hrampadarath/JBCA_Hack_Night_Dec/tree/master/web_app/templates). A simple app.py contains code that returns a rendered version of the html files in the templates folder. For example:
+The Flask app consists of 2 main components: the main 
+[app.py](https://github.com/hrampadarath/JBCA_Hack_Night_Dec/blob/master/web_app/app.py) and HTML templates, which are saved in a folder called 
+[templates](https://github.com/hrampadarath/JBCA_Hack_Night_Dec/tree/master/web_app/templates). A simple app.py contains code that returns a rendered version of the html files in the templates folder. For example:
 
 ```python
 from flask import Flask, request, render_template
