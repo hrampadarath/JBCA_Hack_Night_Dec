@@ -33,7 +33,7 @@ Below we've described two different challenges for which each team will pick one
 
 ### Challenge 2: Build a Machine Learning web application
 
-Final product:
+Example of the final product:
 https://movie-recommender-example.herokuapp.com/
 
 ### Challenge 3: TBD
