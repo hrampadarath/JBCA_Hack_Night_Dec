@@ -98,4 +98,46 @@ The above html file has three important features:
 3. This is all wrapped in an html block that is passed to layout.html, creating the webpage. 
 
 While building the app, my first version had the user performing two actions: 1. seaching the database for the movie (i.e. if it exists) and 2. copy and pasting that into another form to seach for recommendations. 
-This is an obviously inefficient UI. So insted, the user will search for the movie in a form provided and for each item in the list there will be an associated recommend button. To do this I populated the app.py with two functions: "/similarByName" and "/similarByContent" both calling the same html file "similar.html"
+This is an obviously inefficient UI. So insted, the user will search for the movie in a form provided and for each item in the list there will be an associated recommend button. 
+
+To do this I populated the app.py with two functions: "/similarByName" and "/similarByContent" both calling the same html file ["similar.html"](https://github.com/hrampadarath/JBCA_Hack_Night_Dec/blob/master/web_app/templates/similar.html). Have a look at the [app.py](https://github.com/hrampadarath/JBCA_Hack_Night_Dec/blob/master/web_app/app.py). The "/similarByContent" function is where the pickle file is used. 
+However, note similar.html also calls /similarByContent"! What happens is that any result produced by similar.html will also have a button call to /similarByContent. Confusing? Confuffled?
+
+To complete my app.py, I added a random movie generator, and an about page.
+
+
+**Note: while building your Flask app, you can test it by exectuting it via python. It will make a webpage at http://127.0.0.1:5000/**
+
+### Step 5. Deploy to Heroku
+
+Will need a [Heroku](https://www.heroku.com/) account and the [HerokuCLI](https://devcenter.heroku.com/articles/heroku-cli). For our tutorial, we can use the free version of Heroku.
+Create the Procfile: A Procfile is a mechanism for declaring what commands are run by your application’s dynos on the Heroku platform. Create a file called “Procfile” and put the following in it:
+
+	web: gunicorn app:app
+
+Create the python requirements file by running the following at the command prompt (within the virtual environment)
+
+ 	pip freeze > requirements.txt
+
+Set up HerokuCLI using the instructions here.
+Create a new app on the Heroku Website by logging into your account. You can ignore add to pipelines. I named my app: movie-recommender-example.
+
+Login to Heroku through the command prompt:
+
+    heroku login
+
+Upload to Heroku (the instructions will be listed in your Heroku app page):
+
+    > git init
+    > heroku git:remote -a movie-recommender-example
+    > git add .
+    > git commit -am "make it better"
+    > git push heroku master
+
+Your app should be live
+
+    use the "Open app" link on the Heroku app page
+    or https://YOURAPP.herokuapp.com/
+    
+You can view the final web-app from this tutorial at https://movie-recommender-example.herokuapp.com/    
+
