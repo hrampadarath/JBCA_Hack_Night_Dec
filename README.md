@@ -68,6 +68,8 @@ In this challenge you will learn how to web scrape images from Google and use it
 [Heroku](https://www.heroku.com/) - a cloud platform for deploying web applications
 [Flask](http://flask.pocoo.org/) - A frakework to convert python code to a web application
 
+[Intro to ML Book](https://www.dropbox.com/s/9e40qzxpw8dclu3/Introduction_to_Machine_Learning_with_Python.pdf?dl=0)
+
 Previous Hack Nights: 
 1. https://github.com/Davidmul/JBCA_HACKNIGHT
 2. https://github.com/hrampadarath/JBCA_HackNight_Oct17
