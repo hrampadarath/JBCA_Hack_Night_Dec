@@ -36,7 +36,7 @@ Below we've described two different challenges for which each team will pick one
 Example of the final product:
 https://movie-recommender-example.herokuapp.com/
 
-### Challenge 3: TBD
+### Challenge 3: Google Image webscraping and classification
 
 ## Helpful tools
 
