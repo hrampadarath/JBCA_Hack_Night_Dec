@@ -29,7 +29,7 @@ of the data/results.
 Below we've described three different challenges for which each team will pick one to work on.
 
 
-### Challenge 1: Machine learning - Mucis Machine Learning.
+### Challenge 1: Machine learning - Music Machine Learning.
 
 https://github.com/informationcake/music-machine-learning
 
