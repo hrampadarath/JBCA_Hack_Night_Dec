@@ -12,7 +12,7 @@ you will need from the Machine Leanrning part of the project. In this tutorial I
 movie recommendatiions, based on a movie the user liked. The input will be a name of the movie and the output recommendations for 
 that movie. For this to work I will need: (1) a database and (2) a model with the recommendations. 
 
-### Step 2. Build your model and save the impotant bits
+### Step 2. Build your model and save the important bits
 
 This is where you work on your ML project and optimise your models. In this example I have decided to make a simple Movie recommender using the [TMDB database from Kaggle](https://www.kaggle.com/tmdb/tmdb-movie-metadata), which is detailed in a [jupyter notebook](https://github.com/hrampadarath/JBCA_Hack_Night_Dec/blob/master/web_app/Simple_Movie_Recommender.ipynb).
 
